@@ -54,10 +54,10 @@ function kosno()
    }
    //console.log(player);
 
-   document.getElementById(s1).style.color="#eee";
-   document.getElementById(s2).style.color="#eee";
-   document.getElementById(s3).style.color="#eee";
-   document.getElementById(s4).style.color="#eee";
+   document.getElementById(s1).style.color="var(--second)";
+   document.getElementById(s2).style.color="var(--second)";
+   document.getElementById(s3).style.color="var(--second)";
+   document.getElementById(s4).style.color="var(--second)";
    s1="";
    s2="";
    s3="";

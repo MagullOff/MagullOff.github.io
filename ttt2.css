@@ -21,6 +21,12 @@ transition: background 1s;
   margin-bottom: 3rem;
 }
 
+.spanko > div{
+display: flex;
+justify-content: center;
+  align-items: center;
+}
+
 #e{
 
     background: -webkit-linear-gradient(#edc200, #ed3f00);
