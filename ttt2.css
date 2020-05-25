@@ -1,0 +1,385 @@
+:root{
+  --bg: #111111;
+  --second: lightgrey;
+  --hover: #333333;
+}
+
+body
+{
+background-color: var(--bg);
+font-family: 'Rubik', sans-serif;
+color: var(--second);
+text-align: center;
+transition: background 1s;
+
+
+}
+@media screen and (max-width: 700px) and (orientation: landscape) {
+  
+}
+#dupa{
+  margin-bottom: 3rem;
+}
+
+#e{
+
+    background: -webkit-linear-gradient(#edc200, #ed3f00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+#tabelaw{
+  position: absolute;
+  right: 2.5rem;
+  top: 2rem;
+  font-size: 2vw;
+  border: 0.3vh dashed var(--second);
+  border-radius: 2.5vh;
+  width: 20vw;
+  height: 7vw;
+  padding: 0px;
+  padding-top: 0.8vw;
+}
+.dr{
+  margin: 0px;
+  height: 2vw;
+}
+#title
+{
+  display: block;
+  font-size: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 600px;
+  text-align: center;
+
+}
+/*#graczwygral
+{
+  position: absolute;
+  width: 20rem;
+  left: 50%;
+  transform: translate(-10rem,0);
+  top: 33%;
+  margin-left: auto;
+  margin-right: auto;
+}*/
+#gracz
+{
+  position: absolute;
+
+  font-size: 35px;
+  width: 10rem;
+  left: 5rem;
+  top: 2rem;
+  transition: opacity 2s;
+}
+#cwel
+{
+  float: left;
+  text-align: center;
+  margin-left: 70px;
+}
+#plansze{
+  transition: opacity 2s;
+}
+
+
+.kosno
+{
+   margin-left: auto;
+   margin-right: auto;
+   width:600px;
+   font-size: 130px;
+}
+.reset:hover
+{
+  color: var(--second);
+  cursor: pointer;
+}
+.reset
+{
+  margin-left: auto;
+  margin-right: auto;
+  width:auto;
+  font-size: 35px;
+
+}
+.c1:hover
+{
+  background-color: var(--hover);
+  cursor: pointer;
+}
+.c2:hover
+{
+  background-color: var(--hover);
+  cursor: pointer;
+}
+.c3:hover
+{
+  background-color: var(--hover);
+  cursor: pointer;
+}
+.c4:hover
+{
+  background-color: var(--hover);
+  cursor: pointer;
+}
+.r:hover
+{
+  background-color: var(--hover);
+  cursor: pointer;
+}
+.l:hover
+{
+  background-color: var(--hover);
+  cursor: pointer;
+}
+.t:hover
+{
+  background-color: var(--hover);
+  cursor: pointer;
+}
+.b:hover
+{
+  background-color: var(--hover);
+  cursor: pointer;
+}
+.m:hover
+{
+  background-color: var(--hover);
+  cursor: pointer;
+}
+.c1
+{
+  border-right: solid 3px var(--second);
+  border-bottom: solid 3px var(--second);
+  height: 5vmax;
+  width: 5vmax;;
+  float: left;
+  vertical-align: middle;
+  text-align: center;
+
+}
+.c2
+{
+  border-left: solid 3px var(--second);
+  border-bottom: solid 3px var(--second);
+  height: 5vmax;
+  width: 5vmax;
+ float: left;
+ vertical-align: middle;
+  text-align: center;
+}
+.c3
+{
+  border-left: solid 3px var(--second);
+  border-top: solid 3px var(--second);
+  height: 5vmax;
+  width: 5vmax;
+ float: left;
+ vertical-align: middle;
+  text-align: center;
+}
+.c4
+{
+  border-right: solid 3px var(--second);
+  border-top: solid 3px var(--second);
+  height: 5vmax;
+  width: 5vmax;
+ float: left;
+ vertical-align: middle;
+  text-align: center;
+}
+.l
+{
+  border-right: solid 3px var(--second);
+  border-bottom: solid 3px var(--second);
+  border-top: solid 3px var(--second);
+  height: 5vmax;
+  width: 5vmax;
+ float: left;
+ vertical-align: middle;
+  text-align: center;
+}
+.r
+{
+  border-left: solid 3px var(--second);
+  border-bottom: solid 3px var(--second);
+  border-top: solid 3px var(--second);
+  height: 5vmax;
+  width: 5vmax;;
+ float: left;
+ vertical-align: middle;
+  text-align: center;
+}
+.t
+{
+  border-left: solid 3px var(--second);
+  border-right: solid 3px var(--second);
+  border-bottom: solid 3px var(--second);
+  height: 5vmax;
+  width: 5vmax;
+  float: left;
+  vertical-align: middle;
+  text-align: center;
+}
+.b
+{
+  border-left: solid 3px var(--second);
+  border-right: solid 3px var(--second);
+  border-top: solid 3px var(--second);
+  height: 5vmax;
+  width: 5vmax;
+  float: left;
+  vertical-align: middle;
+  text-align: center;
+}
+.m
+{
+  border: solid 3px var(--second);
+  width:5vmax;
+  height: 5vmax;
+  float: left;
+  vertical-align: middle;
+  text-align: center;
+}
+.c1a
+{
+  border-right: solid 3px var(--second);
+  border-bottom: solid 3px var(--second);
+  height: 5vmax;
+  width: 5vmax;
+  float: left;
+  vertical-align: middle;
+  text-align: center;
+
+}
+.c2a
+{
+  border-left: solid 3px var(--second);
+  border-bottom: solid 3px var(--second);
+  height: 5vmax;
+  width: 5vmax;
+ float: left;
+ vertical-align: middle;
+  text-align: center;
+}
+.c3a
+{
+  border-left: solid 3px var(--second);
+  border-top: solid 3px var(--second);
+  height: 5vmax;
+  width: 5vmax;
+ float: left;
+ vertical-align: middle;
+  text-align: center;
+}
+.c4a
+{
+  border-right: solid 3px var(--second);
+  border-top: solid 3px var(--second);
+  height: 5vmax;
+  width: 5vmax;
+ float: left;
+ vertical-align: middle;
+  text-align: center;
+}
+.la
+{
+  border-right: solid 3px var(--second);
+  border-bottom: solid 3px var(--second);
+  border-top: solid 3px var(--second);
+  height: 5vmax;
+  width: 5vmax;
+ float: left;
+ vertical-align: middle;
+  text-align: center;
+}
+.ra
+{
+  border-left: solid 3px var(--second);
+  border-bottom: solid 3px var(--second);
+  border-top: solid 3px var(--second);
+  height: 5vmax;
+  width: 5vmax;
+ float: left;
+ vertical-align: middle;
+  text-align: center;
+}
+.ta
+{
+  border-left: solid 3px var(--second);
+  border-right: solid 3px var(--second);
+  border-bottom: solid 3px var(--second);
+  height: 5vmax;
+  width: 5vmax;
+  float: left;
+  vertical-align: middle;
+  text-align: center;
+}
+.ba
+{
+  border-left: solid 3px var(--second);
+  border-right: solid 3px var(--second);
+  border-top: solid 3px var(--second);
+  height: 5vmax;
+  width: 5vmax;
+  float: left;
+  vertical-align: middle;
+  text-align: center;
+}
+.ma
+{
+  border: solid 3px var(--second);
+  width: 5vmax;
+  height: 5vmax;
+  float: left;
+  vertical-align: middle;
+  text-align: center;
+}
+.kosno
+{
+  z-index: 10;
+   width:600px;
+   height: 500px;
+   font-size: 130px;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-300px, -200px);
+   pointer-events: none;
+   opacity: 0;
+   transition: opacity 2s;
+}
+.spanko
+{
+  display: block;
+  height: 100%;
+  width: 20vmax;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1vmax;
+}
+
+.plan
+{
+
+  font-size: 4vmax;
+}
+.w
+{
+  float: right;
+}
+#dupakosna{
+  position: fixed;
+  bottom: 5vh;
+  left: 5vh;
+  font-size: 30px;
+  height: 70px;
+  width: 70px;
+  color: var(--second);
+ 
+}

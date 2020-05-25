@@ -1,0 +1,21 @@
+{
+    "name": "tictactoe",
+    "shortname": "tictactoe",
+    "display": "standalone",
+    "background_color": "#222222",
+    "theme_color": "#222222",
+    "start_url": "/index.html",
+    "icons": [
+        {
+          "src": "/icons/ttt2.png",
+          "type": "image/png",
+          "sizes": "196x196"
+        },
+        {
+          "src": "/icons/ttt1.png",
+          "type": "image/png",
+          "sizes": "512x512"
+        }
+    ]
+
+}

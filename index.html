@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8"/>
+  <title>TicTacToe 4x4x4</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="ttt2.css" type="text/css">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/icons/ttt1.png">
+  <script src="ttt2.js"></script>
+</head>
+
+<body>
+  <div id="dupa">
+  <span id="gracz">Player1(o)</span>
+  <span id="title">TicTacTo<span id="e">e</span>!</span>
+<span id="tabelaw"><div class="dr">Player1: 0</div>  <div class="dr">Player2: 0</div></span>
+</div>
+
+    <span id="graczwygral" class="kosno center-align"></span>
+
+    <div id="plansze" class="plan row">
+      <div id="p4" class="p col s12 l3 center-align"><span class="spanko">
+        <div id="p4x1y4" class="c1" onclick="mark(4,1,4)"></div><div id="p4x2y4" class="t" onclick="mark(4,2,4)"></div><div id="p4x3y4" class="t" onclick="mark(4,3,4)"></div><div id="p4x4y4" class="c2" onclick="mark(4,4,4)"></div><div style="clear:both;"></div>
+        <div id="p4x1y3" class="l"  onclick="mark(4,1,3)"></div><div id="p4x2y3" class="m" onclick="mark(4,2,3)"></div><div id="p4x3y3" class="m" onclick="mark(4,3,3)"></div><div id="p4x4y3" class="r"  onclick="mark(4,4,3)"></div><div style="clear:both;"></div>
+        <div id="p4x1y2" class="l"  onclick="mark(4,1,2)"></div><div id="p4x2y2" class="m" onclick="mark(4,2,2)"></div><div id="p4x3y2" class="m" onclick="mark(4,3,2)"></div><div id="p4x4y2" class="r"  onclick="mark(4,4,2)"></div><div style="clear:both;"></div>
+        <div id="p4x1y1" class="c4" onclick="mark(4,1,1)"></div><div id="p4x2y1" class="b" onclick="mark(4,2,1)"></div><div id="p4x3y1" class="b" onclick="mark(4,3,1)"></div><div id="p4x4y1" class="c3" onclick="mark(4,4,1)"></div><div style="clear:both;"></div>
+      </span></div>
+      <div id="p3" class="p col s12 l3 center-align"><span class="spanko">
+        <div id="p3x1y4" class="c1" onclick="mark(3,1,4)"></div><div id="p3x2y4" class="t" onclick="mark(3,2,4)"></div><div id="p3x3y4" class="t" onclick="mark(3,3,4)"></div><div id="p3x4y4" class="c2" onclick="mark(3,4,4)"></div><div style="clear:both;"></div>
+        <div id="p3x1y3" class="l"  onclick="mark(3,1,3)"></div><div id="p3x2y3" class="m" onclick="mark(3,2,3)"></div><div id="p3x3y3" class="m" onclick="mark(3,3,3)"></div><div id="p3x4y3" class="r"  onclick="mark(3,4,3)"></div><div style="clear:both;"></div>
+        <div id="p3x1y2" class="l"  onclick="mark(3,1,2)"></div><div id="p3x2y2" class="m" onclick="mark(3,2,2)"></div><div id="p3x3y2" class="m" onclick="mark(3,3,2)"></div><div id="p3x4y2" class="r"  onclick="mark(3,4,2)"></div><div style="clear:both;"></div>
+        <div id="p3x1y1" class="c4" onclick="mark(3,1,1)"></div><div id="p3x2y1" class="b" onclick="mark(3,2,1)"></div><div id="p3x3y1" class="b" onclick="mark(3,3,1)"></div><div id="p3x4y1" class="c3" onclick="mark(3,4,1)"></div><div style="clear:both;"></div>
+      </span></div>
+      <div id="p2" class="p col s12 l3 center-align"><span class="spanko">
+        <div id="p2x1y4" class="c1" onclick="mark(2,1,4)"></div><div id="p2x2y4" class="t" onclick="mark(2,2,4)"></div><div id="p2x3y4" class="t" onclick="mark(2,3,4)"></div><div id="p2x4y4" class="c2" onclick="mark(2,4,4)"></div><div style="clear:both;"></div>
+        <div id="p2x1y3" class="l"  onclick="mark(2,1,3)"></div><div id="p2x2y3" class="m" onclick="mark(2,2,3)"></div><div id="p2x3y3" class="m" onclick="mark(2,3,3)"></div><div id="p2x4y3" class="r"  onclick="mark(2,4,3)"></div><div style="clear:both;"></div>
+        <div id="p2x1y2" class="l"  onclick="mark(2,1,2)"></div><div id="p2x2y2" class="m" onclick="mark(2,2,2)"></div><div id="p2x3y2" class="m" onclick="mark(2,3,2)"></div><div id="p2x4y2" class="r"  onclick="mark(2,4,2)"></div><div style="clear:both;"></div>
+        <div id="p2x1y1" class="c4" onclick="mark(2,1,1)"></div><div id="p2x2y1" class="b" onclick="mark(2,2,1)"></div><div id="p2x3y1" class="b" onclick="mark(2,3,1)"></div><div id="p2x4y1" class="c3" onclick="mark(2,4,1)"></div><div style="clear:both;"></div>
+      </span></div>
+      <div id="p1" class="p col s12 l3 center-align"><span class="spanko">
+        <div id="p1x1y4" class="c1" onclick="mark(1,1,4)"></div><div id="p1x2y4" class="t" onclick="mark(1,2,4)"></div><div id="p1x3y4" class="t" onclick="mark(1,3,4)"></div><div id="p1x4y4" class="c2" onclick="mark(1,4,4)"></div><div style="clear:both;"></div>
+        <div id="p1x1y3" class="l"  onclick="mark(1,1,3)"></div><div id="p1x2y3" class="m" onclick="mark(1,2,3)"></div><div id="p1x3y3" class="m" onclick="mark(1,3,3)"></div><div id="p1x4y3" class="r"  onclick="mark(1,4,3)"></div><div style="clear:both;"></div>
+        <div id="p1x1y2" class="l"  onclick="mark(1,1,2)"></div><div id="p1x2y2" class="m" onclick="mark(1,2,2)"></div><div id="p1x3y2" class="m" onclick="mark(1,3,2)"></div><div id="p1x4y2" class="r"  onclick="mark(1,4,2)"></div><div style="clear:both;"></div>
+        <div id="p1x1y1" class="c4" onclick="mark(1,1,1)"></div><div id="p1x2y1" class="b" onclick="mark(1,2,1)"></div><div id="p1x3y1" class="b" onclick="mark(1,3,1)"></div><div id="p1x4y1" class="c3" onclick="mark(1,4,1)"></div><div style="clear:both;"></div>
+      </span></div>
+    </div>
+
+
+
+    <a class="btn-floating btn-large waves-effect waves-light grey darken-1" id="dupakosna" onclick="dupabartosza()">D/N</a>
+</body>
+</html>
