@@ -1,3 +1,62 @@
+.ohh{
+  position: relative;
+}
+#plansze .spanko{
+  transform: perspective(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+  translateX(0vw) translateY(0px) translateZ(0px)
+}
+.ohh > div{
+  position: absolute;
+  left: 50% !important;
+  transform: translate(-50%);
+}
+
+#p1, #p2, #p3, #p4{
+
+  z-index: -1;
+}
+.ohh .spanko{
+  transition: all ease 1600ms;
+  transform-style: preserve-3d;
+}
+
+.ohh .spanko{
+  transition: all ease 1600ms;
+  transform-style: preserve-3d;
+  z-index: 100;
+}
+
+.ohh #p4 .spanko{
+  transform: perspective(5000px) rotateX(50deg) rotateY(20deg) rotateZ(-25deg)
+  translateX(-40vw) translateY(500px) translateZ(100px) !important;
+} .ohh #p4 .spanko > div{
+  border-color: rgb(46, 46, 46) !important;
+}
+
+.ohh #p3 .spanko{
+  transform: perspective(5000px) rotateX(50deg) rotateY(20deg) rotateZ(-25deg)
+  translateX(-30vw) translateY(500px) translateZ(250px) !important;
+}.ohh #p3 .spanko > div{
+  border-color: rgb(87, 87, 87) !important;
+}
+.ohh #p2 .spanko{
+  transform: perspective(5000px) rotateX(50deg) rotateY(20deg) rotateZ(-25deg)
+  translateX(-20vw) translateY(500px) translateZ(400px) !important;
+}.ohh #p2 .spanko > div{
+  border-color: rgb(148, 148, 148) !important;
+}
+.ohh #p1 .spanko{
+  transform: perspective(5000px) rotateX(50deg) rotateY(20deg) rotateZ(-25deg)
+  translateX(-10vw) translateY(500px) translateZ(550px) !important;
+}.ohh #p1 .spanko > div{
+  border-color: rgb(206, 206, 206) !important;
+}
+
+
+
+
+
+
 :root{
   --bg: #111111;
   --second: lightgrey;
@@ -381,11 +440,26 @@ justify-content: center;
 }
 #dupakosna{
   position: fixed;
-  bottom: 5vh;
+  bottom: 2vh;
   left: 5vh;
   font-size: 30px;
   height: 70px;
   width: 70px;
   color: var(--second);
- 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#dupakosna2{
+  position: fixed;
+  bottom: calc(3vh + 70px);
+  left: 5vh;
+  font-size: 30px;
+  height: 70px;
+  width: 70px;
+  color: var(--second);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -329,3 +329,7 @@ var dupabartosza = () =>{
 
 
 }
+
+const ohujchodzi = () =>{
+  document.querySelector('#plansze').classList.toggle('ohh');
+}
