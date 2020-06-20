@@ -2,9 +2,9 @@ let date = new Date();
 VIS = (n,s)=>{
     for(let i=1;i<5;i++){
       if(s.charAt(i-1)=='1'){
-        document.getElementById("a"+i+n).style.backgroundColor = "lightgrey";
+        document.getElementById("a"+i+n).style.background = "#EEEEEE";
       }else{
-        document.getElementById("a"+i+n).style.backgroundColor = "#121212";
+        document.getElementById("a"+i+n).style.background = "#111111";
       }
     }
 }
@@ -49,6 +49,29 @@ updateClock = ()=>{
       a6: currentSeconds%10
   }
 }
+const timeString=updateClock();
+    document.getElementById("time").innerHTML=
+    `
+    <h2 class="center col s2">${timeString.a1}<h2>
+    <h2 class="center col s2">${timeString.a2}<h2>
+    <h2 class="center col s2">${timeString.a3}<h2>
+    <h2 class="center col s2">${timeString.a4}<h2>
+    <h2 class="center col s2">${timeString.a5}<h2>
+    <h2 class="center col s2">${timeString.a6}<h2>
+    `
+    const bin1 = f(toBin(timeString.a1));
+    const bin2 = f(toBin(timeString.a2));
+    const bin3 = f(toBin(timeString.a3));
+    const bin4 = f(toBin(timeString.a4));
+    const bin5 = f(toBin(timeString.a5));
+    const bin6 = f(toBin(timeString.a6));
+    
+    VIS(1,bin1);
+    VIS(2,bin2);
+    VIS(3,bin3);
+    VIS(4,bin4);
+    VIS(5,bin5);
+    VIS(6,bin6);
 setInterval(()=>{
     const timeString=updateClock();
     document.getElementById("time").innerHTML=
