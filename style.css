@@ -1,0 +1,18 @@
+body{
+    background-color: grey;
+}
+.main{
+    height: 72vh;
+    
+}
+.top{
+    height: 7vh;
+    
+}
+.kosno{
+    height: 16vh;
+    border: 3px solid black;
+}
+h2{
+    text-align: center;
+}
