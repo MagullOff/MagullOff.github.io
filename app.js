@@ -2,9 +2,9 @@ let date = new Date();
 VIS = (n,s)=>{
     for(let i=1;i<5;i++){
       if(s.charAt(i-1)=='1'){
-        document.getElementById("a"+i+n).style.backgroundColor = "white";
+        document.getElementById("a"+i+n).style.backgroundColor = "lightgrey";
       }else{
-        document.getElementById("a"+i+n).style.backgroundColor = "black";
+        document.getElementById("a"+i+n).style.backgroundColor = "#121212";
       }
     }
 }
