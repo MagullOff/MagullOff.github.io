@@ -1,5 +1,5 @@
 body{
-    background-color: darkgrey;
+    background-color: grey;
 }
 .main{
     height: 72vh;
@@ -11,8 +11,8 @@ body{
 }
 .kosno{
     height: 16vh;
-    border-left: darkgrey 10px solid;
-    border-right: darkgrey 10px solid;
+    border-left: grey 10px solid;
+    border-right: grey 10px solid;
     background-color: #111111;
 }
 h2{
